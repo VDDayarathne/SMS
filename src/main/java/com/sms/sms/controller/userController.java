@@ -24,13 +24,13 @@ public class userController {
     }
 
     @PutMapping("/updateUser")
-    public String updateUser(){
-        return "User Updated";
+    public UserDTO updateUser(@RequestBody UserDTO userDTO){
+        return userService.updateUser(userDTO);
     }
 
     @DeleteMapping("/deleteUser")
-    public String deleteUser(){
-        return "User Deleted";
+    public boolean deleteUser(@RequestBody UserDTO userDTO){
+        return userService.deleteUser(userDTO);
     }
 
 }
