@@ -2,6 +2,7 @@ package com.sms.sms.controller;
 
 import com.sms.sms.dto.UserDTO;
 import com.sms.sms.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @CrossOrigin
 
 public class userController {
+    @Autowired
     private UserService userService;
 
     @GetMapping("/getUsers")
