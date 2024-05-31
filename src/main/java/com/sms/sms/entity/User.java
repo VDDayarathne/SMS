@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class User{
    @Id
     private int id;
-    private String userName;
+    private String username;
     private String password;
-    private String Faculty;
+    private String faculty;
 
 }
